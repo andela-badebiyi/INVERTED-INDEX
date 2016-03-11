@@ -184,16 +184,6 @@ Index.prototype.constructIndex = function(){
     return indexStructure;
   };
 
-Index.prototype.sortResults = function(data){
-    unsorted = data.slice(0, data.length);
-    result = [];
-    sorted = data.sort().reverse();
-    sorted.forEach(function(element, index){
-      if(element !== 0) result.push(unsorted.indexOf(element));
-    });
-    return result;
-};
-
 Index.prototype.sortResult = function(data){
   var i=0, result = [], val;
   for(i; i<data.length; i++){
